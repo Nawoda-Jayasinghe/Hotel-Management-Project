@@ -13,7 +13,7 @@ using FontAwesome.Sharp;
 
 namespace Hotel_Management_System
 {
-    public partial class New : Form
+    public partial class FormMain : Form
     {
         //fields
         private IconButton currentBtn;
@@ -22,7 +22,7 @@ namespace Hotel_Management_System
 
 
         //constructor
-        public New()
+        public FormMain()
         {
             InitializeComponent();
             leftBoarderBtn = new Panel();
@@ -91,31 +91,35 @@ namespace Hotel_Management_System
             }
         }
 
-
-
-        private void iconButton1_Click(object sender, EventArgs e)
+        private void btnNewGuest_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            OpenForm(new FormNewGuest());
+
         }
 
-        private void iconButton2_Click(object sender, EventArgs e)
+        private void btnSalaryDetails_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
+            OpenForm(new FormSalaryDetails());
         }
 
-        private void iconButton3_Click(object sender, EventArgs e)
+        private void btnRoomDetails_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
+            OpenForm(new FormRoomDetails());
         }
 
-        private void iconButton4_Click(object sender, EventArgs e)
+        private void btnGuestDetails_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
+            OpenForm(new FormGuestDetails());
         }
 
-        private void iconButton5_Click(object sender, EventArgs e)
+        private void btnRestaurant_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
+            OpenForm(new FormRestaurant());
         }
 
         private void panelLogo_Paint(object sender, PaintEventArgs e)
@@ -140,8 +144,8 @@ namespace Hotel_Management_System
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-            panelD.Controls.Add(childForm);
-            panelD.Tag = childForm;
+            panelGuest.Controls.Add(childForm);
+            panelGuest.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
             titleCurrent.Text = childForm.Text;
@@ -177,6 +181,176 @@ namespace Hotel_Management_System
         private void panelD_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void panelMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void titleCurrent_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconCurrent_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelS_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label39_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void maskedTextBox2_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

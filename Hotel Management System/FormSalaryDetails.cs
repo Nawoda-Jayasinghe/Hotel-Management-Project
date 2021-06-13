@@ -10,33 +10,18 @@ using System.Windows.Forms;
 
 namespace Hotel_Management_System
 {
-    public partial class Login : Form
+    public partial class FormSalaryDetails : Form
     {
-        public Login()
+        public FormSalaryDetails()
         {
             InitializeComponent();
         }
 
-
-        private void pictureBox4_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            FormMain mainmenu = new FormMain();
-           mainmenu.ShowDialog();
             this.Close();
-
-
-           
-
         }
 
-        private void Login_Load(object sender, EventArgs e)
-        {
 
-        }
     }
 }
