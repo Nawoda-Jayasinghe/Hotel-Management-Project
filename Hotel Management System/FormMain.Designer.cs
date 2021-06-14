@@ -38,6 +38,7 @@ namespace Hotel_Management_System
             this.panelLogo = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.titleCurrent = new System.Windows.Forms.Label();
             this.iconCurrent = new FontAwesome.Sharp.IconPictureBox();
             this.panelS = new System.Windows.Forms.Panel();
@@ -69,15 +70,14 @@ namespace Hotel_Management_System
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
-            this.panelGuest = new System.Windows.Forms.Panel();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.panelDesktop = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconCurrent)).BeginInit();
-            this.panelGuest.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconCurrent)).BeginInit();
+            this.panelDesktop.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -92,7 +92,7 @@ namespace Hotel_Management_System
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(220, 687);
+            this.panelMenu.Size = new System.Drawing.Size(307, 1055);
             this.panelMenu.TabIndex = 0;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             // 
@@ -101,16 +101,17 @@ namespace Hotel_Management_System
             this.btnRestaurant.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnRestaurant.FlatAppearance.BorderSize = 0;
             this.btnRestaurant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestaurant.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRestaurant.ForeColor = System.Drawing.Color.White;
             this.btnRestaurant.IconChar = FontAwesome.Sharp.IconChar.PiggyBank;
             this.btnRestaurant.IconColor = System.Drawing.Color.White;
             this.btnRestaurant.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnRestaurant.IconSize = 32;
             this.btnRestaurant.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRestaurant.Location = new System.Drawing.Point(0, 391);
+            this.btnRestaurant.Location = new System.Drawing.Point(0, 484);
             this.btnRestaurant.Name = "btnRestaurant";
             this.btnRestaurant.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnRestaurant.Size = new System.Drawing.Size(220, 60);
+            this.btnRestaurant.Size = new System.Drawing.Size(307, 102);
             this.btnRestaurant.TabIndex = 5;
             this.btnRestaurant.Text = "Restaurant Details";
             this.btnRestaurant.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -123,16 +124,17 @@ namespace Hotel_Management_System
             this.btnGuestDetails.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnGuestDetails.FlatAppearance.BorderSize = 0;
             this.btnGuestDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuestDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuestDetails.ForeColor = System.Drawing.Color.White;
             this.btnGuestDetails.IconChar = FontAwesome.Sharp.IconChar.PeopleArrows;
             this.btnGuestDetails.IconColor = System.Drawing.Color.White;
             this.btnGuestDetails.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnGuestDetails.IconSize = 32;
             this.btnGuestDetails.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuestDetails.Location = new System.Drawing.Point(0, 331);
+            this.btnGuestDetails.Location = new System.Drawing.Point(0, 402);
             this.btnGuestDetails.Name = "btnGuestDetails";
             this.btnGuestDetails.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnGuestDetails.Size = new System.Drawing.Size(220, 60);
+            this.btnGuestDetails.Size = new System.Drawing.Size(307, 82);
             this.btnGuestDetails.TabIndex = 4;
             this.btnGuestDetails.Text = "Guest Details";
             this.btnGuestDetails.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -145,16 +147,17 @@ namespace Hotel_Management_System
             this.btnRoomDetails.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnRoomDetails.FlatAppearance.BorderSize = 0;
             this.btnRoomDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRoomDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRoomDetails.ForeColor = System.Drawing.Color.White;
             this.btnRoomDetails.IconChar = FontAwesome.Sharp.IconChar.StoreAlt;
             this.btnRoomDetails.IconColor = System.Drawing.Color.White;
             this.btnRoomDetails.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnRoomDetails.IconSize = 32;
             this.btnRoomDetails.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRoomDetails.Location = new System.Drawing.Point(0, 271);
+            this.btnRoomDetails.Location = new System.Drawing.Point(0, 321);
             this.btnRoomDetails.Name = "btnRoomDetails";
             this.btnRoomDetails.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnRoomDetails.Size = new System.Drawing.Size(220, 60);
+            this.btnRoomDetails.Size = new System.Drawing.Size(307, 81);
             this.btnRoomDetails.TabIndex = 3;
             this.btnRoomDetails.Text = "Room Details";
             this.btnRoomDetails.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -167,16 +170,17 @@ namespace Hotel_Management_System
             this.btnSalaryDetails.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSalaryDetails.FlatAppearance.BorderSize = 0;
             this.btnSalaryDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalaryDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalaryDetails.ForeColor = System.Drawing.Color.White;
             this.btnSalaryDetails.IconChar = FontAwesome.Sharp.IconChar.Paypal;
             this.btnSalaryDetails.IconColor = System.Drawing.Color.White;
             this.btnSalaryDetails.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSalaryDetails.IconSize = 32;
             this.btnSalaryDetails.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalaryDetails.Location = new System.Drawing.Point(0, 211);
+            this.btnSalaryDetails.Location = new System.Drawing.Point(0, 237);
             this.btnSalaryDetails.Name = "btnSalaryDetails";
             this.btnSalaryDetails.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnSalaryDetails.Size = new System.Drawing.Size(220, 60);
+            this.btnSalaryDetails.Size = new System.Drawing.Size(307, 84);
             this.btnSalaryDetails.TabIndex = 2;
             this.btnSalaryDetails.Text = "Salary Details";
             this.btnSalaryDetails.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -189,6 +193,7 @@ namespace Hotel_Management_System
             this.btnNewGuest.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnNewGuest.FlatAppearance.BorderSize = 0;
             this.btnNewGuest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewGuest.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewGuest.ForeColor = System.Drawing.Color.White;
             this.btnNewGuest.IconChar = FontAwesome.Sharp.IconChar.Table;
             this.btnNewGuest.IconColor = System.Drawing.Color.White;
@@ -198,7 +203,7 @@ namespace Hotel_Management_System
             this.btnNewGuest.Location = new System.Drawing.Point(0, 151);
             this.btnNewGuest.Name = "btnNewGuest";
             this.btnNewGuest.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnNewGuest.Size = new System.Drawing.Size(220, 60);
+            this.btnNewGuest.Size = new System.Drawing.Size(307, 86);
             this.btnNewGuest.TabIndex = 1;
             this.btnNewGuest.Text = "New Guest";
             this.btnNewGuest.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -212,7 +217,7 @@ namespace Hotel_Management_System
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(220, 151);
+            this.panelLogo.Size = new System.Drawing.Size(307, 151);
             this.panelLogo.TabIndex = 0;
             this.panelLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogo_Paint);
             // 
@@ -234,12 +239,28 @@ namespace Hotel_Management_System
             this.panel1.Controls.Add(this.titleCurrent);
             this.panel1.Controls.Add(this.iconCurrent);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(220, 0);
+            this.panel1.Location = new System.Drawing.Point(307, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(962, 75);
+            this.panel1.Size = new System.Drawing.Size(1541, 75);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.iconPictureBox1.ForeColor = System.Drawing.Color.Red;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.DotCircle;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.Red;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 35;
+            this.iconPictureBox1.Location = new System.Drawing.Point(1490, 13);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(48, 35);
+            this.iconPictureBox1.TabIndex = 3;
+            this.iconPictureBox1.TabStop = false;
+            this.iconPictureBox1.Click += new System.EventHandler(this.iconPictureBox1_Click);
             // 
             // titleCurrent
             // 
@@ -269,9 +290,9 @@ namespace Hotel_Management_System
             // 
             this.panelS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
             this.panelS.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelS.Location = new System.Drawing.Point(220, 75);
+            this.panelS.Location = new System.Drawing.Point(307, 75);
             this.panelS.Name = "panelS";
-            this.panelS.Size = new System.Drawing.Size(962, 9);
+            this.panelS.Size = new System.Drawing.Size(1541, 9);
             this.panelS.TabIndex = 2;
             this.panelS.Paint += new System.Windows.Forms.PaintEventHandler(this.panelS_Paint);
             // 
@@ -359,7 +380,7 @@ namespace Hotel_Management_System
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label14.Location = new System.Drawing.Point(97, 97);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(153, 48);
+            this.label14.Size = new System.Drawing.Size(201, 48);
             this.label14.TabIndex = 84;
             this.label14.Text = "Available Rooms";
             this.label14.UseWaitCursor = true;
@@ -593,72 +614,57 @@ namespace Hotel_Management_System
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // panelGuest
+            // panelDesktop
             // 
-            this.panelGuest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panelGuest.Controls.Add(this.button1);
-            this.panelGuest.Controls.Add(this.radioButton3);
-            this.panelGuest.Controls.Add(this.radioButton4);
-            this.panelGuest.Controls.Add(this.label2);
-            this.panelGuest.Controls.Add(this.maskedTextBox1);
-            this.panelGuest.Controls.Add(this.maskedTextBox2);
-            this.panelGuest.Controls.Add(this.label3);
-            this.panelGuest.Controls.Add(this.button3);
-            this.panelGuest.Controls.Add(this.textBox1);
-            this.panelGuest.Controls.Add(this.textBox3);
-            this.panelGuest.Controls.Add(this.textBox4);
-            this.panelGuest.Controls.Add(this.textBox5);
-            this.panelGuest.Controls.Add(this.textBox6);
-            this.panelGuest.Controls.Add(this.label7);
-            this.panelGuest.Controls.Add(this.label8);
-            this.panelGuest.Controls.Add(this.label9);
-            this.panelGuest.Controls.Add(this.label10);
-            this.panelGuest.Controls.Add(this.label11);
-            this.panelGuest.Controls.Add(this.label12);
-            this.panelGuest.Controls.Add(this.label13);
-            this.panelGuest.Controls.Add(this.label14);
-            this.panelGuest.Controls.Add(this.label15);
-            this.panelGuest.Controls.Add(this.comboBox1);
-            this.panelGuest.Controls.Add(this.label16);
-            this.panelGuest.Controls.Add(this.label17);
-            this.panelGuest.Controls.Add(this.label18);
-            this.panelGuest.Controls.Add(this.label19);
-            this.panelGuest.Controls.Add(this.label39);
-            this.panelGuest.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelGuest.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelGuest.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.panelGuest.Location = new System.Drawing.Point(220, 84);
-            this.panelGuest.Name = "panelGuest";
-            this.panelGuest.Size = new System.Drawing.Size(962, 603);
-            this.panelGuest.TabIndex = 3;
-            this.panelGuest.Paint += new System.Windows.Forms.PaintEventHandler(this.panelD_Paint);
-            // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.iconPictureBox1.ForeColor = System.Drawing.Color.Red;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.DotCircle;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.Red;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 35;
-            this.iconPictureBox1.Location = new System.Drawing.Point(911, 13);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(48, 35);
-            this.iconPictureBox1.TabIndex = 3;
-            this.iconPictureBox1.TabStop = false;
-            this.iconPictureBox1.Click += new System.EventHandler(this.iconPictureBox1_Click);
+            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panelDesktop.Controls.Add(this.button1);
+            this.panelDesktop.Controls.Add(this.radioButton3);
+            this.panelDesktop.Controls.Add(this.radioButton4);
+            this.panelDesktop.Controls.Add(this.label2);
+            this.panelDesktop.Controls.Add(this.maskedTextBox1);
+            this.panelDesktop.Controls.Add(this.maskedTextBox2);
+            this.panelDesktop.Controls.Add(this.label3);
+            this.panelDesktop.Controls.Add(this.button3);
+            this.panelDesktop.Controls.Add(this.textBox1);
+            this.panelDesktop.Controls.Add(this.textBox3);
+            this.panelDesktop.Controls.Add(this.textBox4);
+            this.panelDesktop.Controls.Add(this.textBox5);
+            this.panelDesktop.Controls.Add(this.textBox6);
+            this.panelDesktop.Controls.Add(this.label7);
+            this.panelDesktop.Controls.Add(this.label8);
+            this.panelDesktop.Controls.Add(this.label9);
+            this.panelDesktop.Controls.Add(this.label10);
+            this.panelDesktop.Controls.Add(this.label11);
+            this.panelDesktop.Controls.Add(this.label12);
+            this.panelDesktop.Controls.Add(this.label13);
+            this.panelDesktop.Controls.Add(this.label14);
+            this.panelDesktop.Controls.Add(this.label15);
+            this.panelDesktop.Controls.Add(this.comboBox1);
+            this.panelDesktop.Controls.Add(this.label16);
+            this.panelDesktop.Controls.Add(this.label17);
+            this.panelDesktop.Controls.Add(this.label18);
+            this.panelDesktop.Controls.Add(this.label19);
+            this.panelDesktop.Controls.Add(this.label39);
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelDesktop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panelDesktop.Location = new System.Drawing.Point(307, 84);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(1541, 971);
+            this.panelDesktop.TabIndex = 3;
+            this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelD_Paint);
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1182, 687);
-            this.Controls.Add(this.panelGuest);
+            this.ClientSize = new System.Drawing.Size(1848, 1055);
+            this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelS);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelMenu);
             this.Name = "FormMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "New";
             this.Load += new System.EventHandler(this.New_Load);
             this.panelMenu.ResumeLayout(false);
@@ -666,10 +672,10 @@ namespace Hotel_Management_System
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconCurrent)).EndInit();
-            this.panelGuest.ResumeLayout(false);
-            this.panelGuest.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconCurrent)).EndInit();
+            this.panelDesktop.ResumeLayout(false);
+            this.panelDesktop.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -716,7 +722,7 @@ namespace Hotel_Management_System
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panelGuest;
+        private System.Windows.Forms.Panel panelDesktop;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
     }
 }
