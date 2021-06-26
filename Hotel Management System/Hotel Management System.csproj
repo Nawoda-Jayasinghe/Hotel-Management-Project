@@ -76,40 +76,40 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseConnection.cs" />
-    <Compile Include="FormNewGuest.cs">
+    <Compile Include="Reciptionist\FormNewGuest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormNewGuest.Designer.cs">
+    <Compile Include="Reciptionist\FormNewGuest.Designer.cs">
       <DependentUpon>FormNewGuest.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSalaryDetails.cs">
+    <Compile Include="Reciptionist\FormSalaryDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSalaryDetails.Designer.cs">
+    <Compile Include="Reciptionist\FormSalaryDetails.Designer.cs">
       <DependentUpon>FormSalaryDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormRoomDetails.cs">
+    <Compile Include="Reciptionist\FormRoomDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormRoomDetails.Designer.cs">
+    <Compile Include="Reciptionist\FormRoomDetails.Designer.cs">
       <DependentUpon>FormRoomDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormGuestDetails.cs">
+    <Compile Include="Reciptionist\FormGuestDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormGuestDetails.Designer.cs">
+    <Compile Include="Reciptionist\FormGuestDetails.Designer.cs">
       <DependentUpon>FormGuestDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormRestaurant.cs">
+    <Compile Include="Reciptionist\FormRestaurant.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormRestaurant.Designer.cs">
+    <Compile Include="Reciptionist\FormRestaurant.Designer.cs">
       <DependentUpon>FormRestaurant.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMain.cs">
+    <Compile Include="Reciptionist\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMain.Designer.cs">
+    <Compile Include="Reciptionist\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Reciptionist.cs">
@@ -118,10 +118,10 @@
     <Compile Include="Reciptionist.Designer.cs">
       <DependentUpon>Reciptionist.cs</DependentUpon>
     </Compile>
-    <Compile Include="Home-Reciptionist.cs">
+    <Compile Include="Reciptionist\Home-Reciptionist.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home-Reciptionist.Designer.cs">
+    <Compile Include="Reciptionist\Home-Reciptionist.Designer.cs">
       <DependentUpon>Home-Reciptionist.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
@@ -144,28 +144,28 @@
     <Compile Include="Test2.Designer.cs">
       <DependentUpon>Test2.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FormNewGuest.resx">
+    <EmbeddedResource Include="Reciptionist\FormNewGuest.resx">
       <DependentUpon>FormNewGuest.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMain.resx">
+    <EmbeddedResource Include="Reciptionist\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSalaryDetails.resx">
+    <EmbeddedResource Include="Reciptionist\FormSalaryDetails.resx">
       <DependentUpon>FormSalaryDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormRoomDetails.resx">
+    <EmbeddedResource Include="Reciptionist\FormRoomDetails.resx">
       <DependentUpon>FormRoomDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormGuestDetails.resx">
+    <EmbeddedResource Include="Reciptionist\FormGuestDetails.resx">
       <DependentUpon>FormGuestDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormRestaurant.resx">
+    <EmbeddedResource Include="Reciptionist\FormRestaurant.resx">
       <DependentUpon>FormRestaurant.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reciptionist.resx">
       <DependentUpon>Reciptionist.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Home-Reciptionist.resx">
+    <EmbeddedResource Include="Reciptionist\Home-Reciptionist.resx">
       <DependentUpon>Home-Reciptionist.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
@@ -246,6 +246,10 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admin\" />
+    <Folder Include="Cashier\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

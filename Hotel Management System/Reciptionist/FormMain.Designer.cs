@@ -92,7 +92,7 @@ namespace Hotel_Management_System
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(307, 1055);
+            this.panelMenu.Size = new System.Drawing.Size(307, 727);
             this.panelMenu.TabIndex = 0;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             // 
@@ -241,7 +241,7 @@ namespace Hotel_Management_System
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(307, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1541, 75);
+            this.panel1.Size = new System.Drawing.Size(979, 75);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
@@ -255,7 +255,7 @@ namespace Hotel_Management_System
             this.iconPictureBox1.IconColor = System.Drawing.Color.Red;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 35;
-            this.iconPictureBox1.Location = new System.Drawing.Point(1490, 13);
+            this.iconPictureBox1.Location = new System.Drawing.Point(928, 13);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(48, 35);
             this.iconPictureBox1.TabIndex = 3;
@@ -292,7 +292,7 @@ namespace Hotel_Management_System
             this.panelS.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelS.Location = new System.Drawing.Point(307, 75);
             this.panelS.Name = "panelS";
-            this.panelS.Size = new System.Drawing.Size(1541, 9);
+            this.panelS.Size = new System.Drawing.Size(979, 9);
             this.panelS.TabIndex = 2;
             this.panelS.Paint += new System.Windows.Forms.PaintEventHandler(this.panelS_Paint);
             // 
@@ -616,6 +616,7 @@ namespace Hotel_Management_System
             // 
             // panelDesktop
             // 
+            this.panelDesktop.AutoSize = true;
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.panelDesktop.Controls.Add(this.button1);
             this.panelDesktop.Controls.Add(this.radioButton3);
@@ -649,8 +650,9 @@ namespace Hotel_Management_System
             this.panelDesktop.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelDesktop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panelDesktop.Location = new System.Drawing.Point(307, 84);
+            this.panelDesktop.Margin = new System.Windows.Forms.Padding(0);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1541, 971);
+            this.panelDesktop.Size = new System.Drawing.Size(979, 643);
             this.panelDesktop.TabIndex = 3;
             this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelD_Paint);
             // 
@@ -658,7 +660,7 @@ namespace Hotel_Management_System
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1848, 1055);
+            this.ClientSize = new System.Drawing.Size(1286, 727);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelS);
             this.Controls.Add(this.panel1);
@@ -677,6 +679,7 @@ namespace Hotel_Management_System
             this.panelDesktop.ResumeLayout(false);
             this.panelDesktop.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

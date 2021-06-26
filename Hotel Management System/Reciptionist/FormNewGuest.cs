@@ -21,5 +21,10 @@ namespace Hotel_Management_System
         {
             this.Close();
         }
+
+        private void panelDesktop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
