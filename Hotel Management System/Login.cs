@@ -25,12 +25,14 @@ namespace Hotel_Management_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormMain mainmenu = new FormMain();
-           mainmenu.ShowDialog();
-            this.Close();
+            //FormMain mainmenu = new FormMain();
+            // mainmenu.ShowDialog();
+            // this.Close();
 
+            Test2 sample = new Test2();
+             sample.ShowDialog();
+           // OpenForm(new Test());
 
-           
 
         }
 
