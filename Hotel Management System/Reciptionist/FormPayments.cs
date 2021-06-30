@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Hotel_Management_System
 {
-    public partial class FormSalaryDetails : Form
+    public partial class FormPayments : Form
     {
-        public FormSalaryDetails()
+        public FormPayments()
         {
             InitializeComponent();
         }
@@ -22,6 +22,9 @@ namespace Hotel_Management_System
             this.Close();
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
     }
 }

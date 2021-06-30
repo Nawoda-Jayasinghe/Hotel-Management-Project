@@ -30,7 +30,6 @@ namespace Hotel_Management_System
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.button1 = new System.Windows.Forms.Button();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
@@ -58,6 +57,7 @@ namespace Hotel_Management_System
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,6 +91,7 @@ namespace Hotel_Management_System
             this.groupBox1.Controls.Add(this.label18);
             this.groupBox1.Controls.Add(this.label19);
             this.groupBox1.Controls.Add(this.label39);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(9, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(0);
@@ -98,6 +99,7 @@ namespace Hotel_Management_System
             this.groupBox1.TabIndex = 154;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // button1
             // 
@@ -116,7 +118,7 @@ namespace Hotel_Management_System
             this.radioButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.radioButton3.Location = new System.Drawing.Point(612, 227);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(75, 21);
+            this.radioButton3.Size = new System.Drawing.Size(116, 33);
             this.radioButton3.TabIndex = 180;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Female";
@@ -128,7 +130,7 @@ namespace Hotel_Management_System
             this.radioButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.radioButton4.Location = new System.Drawing.Point(487, 227);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(59, 21);
+            this.radioButton4.Size = new System.Drawing.Size(87, 33);
             this.radioButton4.TabIndex = 179;
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Male";
@@ -150,7 +152,7 @@ namespace Hotel_Management_System
             this.maskedTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
             this.maskedTextBox1.Location = new System.Drawing.Point(490, 405);
             this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(326, 22);
+            this.maskedTextBox1.Size = new System.Drawing.Size(326, 34);
             this.maskedTextBox1.TabIndex = 160;
             // 
             // maskedTextBox2
@@ -160,7 +162,7 @@ namespace Hotel_Management_System
             this.maskedTextBox2.Location = new System.Drawing.Point(490, 347);
             this.maskedTextBox2.Mask = "(+\\94) 00-0000000";
             this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(211, 22);
+            this.maskedTextBox2.Size = new System.Drawing.Size(211, 34);
             this.maskedTextBox2.TabIndex = 159;
             // 
             // button3
@@ -180,7 +182,7 @@ namespace Hotel_Management_System
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
             this.textBox1.Location = new System.Drawing.Point(644, 286);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(140, 22);
+            this.textBox1.Size = new System.Drawing.Size(140, 34);
             this.textBox1.TabIndex = 158;
             // 
             // textBox3
@@ -190,7 +192,7 @@ namespace Hotel_Management_System
             this.textBox3.Location = new System.Drawing.Point(490, 63);
             this.textBox3.MaxLength = 10;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(241, 22);
+            this.textBox3.Size = new System.Drawing.Size(241, 34);
             this.textBox3.TabIndex = 154;
             // 
             // textBox4
@@ -199,7 +201,7 @@ namespace Hotel_Management_System
             this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
             this.textBox4.Location = new System.Drawing.Point(490, 286);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(136, 22);
+            this.textBox4.Size = new System.Drawing.Size(136, 34);
             this.textBox4.TabIndex = 157;
             // 
             // textBox5
@@ -208,7 +210,7 @@ namespace Hotel_Management_System
             this.textBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
             this.textBox5.Location = new System.Drawing.Point(490, 171);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(241, 22);
+            this.textBox5.Size = new System.Drawing.Size(241, 34);
             this.textBox5.TabIndex = 156;
             // 
             // textBox6
@@ -217,7 +219,7 @@ namespace Hotel_Management_System
             this.textBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
             this.textBox6.Location = new System.Drawing.Point(490, 111);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(241, 22);
+            this.textBox6.Size = new System.Drawing.Size(241, 34);
             this.textBox6.TabIndex = 155;
             // 
             // label7
@@ -327,7 +329,7 @@ namespace Hotel_Management_System
             "Family"});
             this.comboBox1.Location = new System.Drawing.Point(490, 464);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(211, 24);
+            this.comboBox1.Size = new System.Drawing.Size(211, 37);
             this.comboBox1.TabIndex = 161;
             this.comboBox1.Tag = "";
             this.comboBox1.Text = "Select Option";
