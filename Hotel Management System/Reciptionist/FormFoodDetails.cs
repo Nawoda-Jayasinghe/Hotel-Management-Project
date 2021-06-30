@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Hotel_Management_System
 {
-    public partial class FormRoomDetails : Form
+    public partial class FormFoodDetails : Form
     {
-        public FormRoomDetails()
+        public FormFoodDetails()
         {
             InitializeComponent();
         }
@@ -20,6 +20,11 @@ namespace Hotel_Management_System
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FormRestaurant_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

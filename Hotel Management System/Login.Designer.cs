@@ -155,8 +155,9 @@ namespace Hotel_Management_System
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox4.Image = global::Hotel_Management_System.Properties.Resources._61_612472_minimalist_x_mark_clip_art_medium_size_yellow_removebg_preview;
-            this.pictureBox4.Location = new System.Drawing.Point(387, 12);
+            this.pictureBox4.Location = new System.Drawing.Point(1272, 12);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(20, 20);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -169,7 +170,7 @@ namespace Hotel_Management_System
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(419, 679);
+            this.ClientSize = new System.Drawing.Size(1304, 774);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -181,7 +182,6 @@ namespace Hotel_Management_System
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

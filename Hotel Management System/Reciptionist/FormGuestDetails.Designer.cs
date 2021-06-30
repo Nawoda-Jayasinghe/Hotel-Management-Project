@@ -1,7 +1,7 @@
 ﻿
 namespace Hotel_Management_System
 {
-    partial class FormRestaurant
+    partial class FormGuestDetails
     {
         /// <summary>
         /// Required designer variable.
@@ -44,7 +44,7 @@ namespace Hotel_Management_System
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // FormRestaurant
+            // FormGuestDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -52,8 +52,8 @@ namespace Hotel_Management_System
             this.ClientSize = new System.Drawing.Size(944, 556);
             this.Controls.Add(this.button1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.Name = "FormRestaurant";
-            this.Text = "Restaurant";
+            this.Name = "FormGuestDetails";
+            this.Text = "Guest Details";
             this.ResumeLayout(false);
 
         }

@@ -26,7 +26,7 @@ namespace Hotel_Management_System
         {
             InitializeComponent();
             leftBoarderBtn = new Panel();
-            leftBoarderBtn.Size = new Size(7, 60);
+            leftBoarderBtn.Size = new Size(7, 84);
             panelMenu.Controls.Add(leftBoarderBtn);
 
             //form
@@ -47,6 +47,9 @@ namespace Hotel_Management_System
             public static Color color4 = Color.FromArgb(95,77,221);
             public static Color color5 = Color.FromArgb(249,88,155);
             public static Color color6 = Color.FromArgb(24,161,251);
+            public static Color color7 = Color.FromArgb(253, 138, 114);
+            public static Color color8 = Color.FromArgb(95, 77, 221);
+
         }
 
 
@@ -109,7 +112,11 @@ namespace Hotel_Management_System
             childForm.BringToFront();
             childForm.Show();
             titleCurrent.Text = childForm.Text;
+
+            
         }
+
+       
 
         private void btnNewGuest_Click(object sender, EventArgs e)
         {
@@ -118,10 +125,10 @@ namespace Hotel_Management_System
 
         }
 
-        private void btnSalaryDetails_Click(object sender, EventArgs e)
+        private void btnGuestDetails_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
-            OpenForm(new FormSalaryDetails());
+            OpenForm(new FormGuestDetails());
         }
 
         private void btnRoomDetails_Click(object sender, EventArgs e)
@@ -130,16 +137,28 @@ namespace Hotel_Management_System
             OpenForm(new FormRoomDetails());
         }
 
-        private void btnGuestDetails_Click(object sender, EventArgs e)
+        private void btnFoodDetails_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
-            OpenForm(new FormGuestDetails());
+            OpenForm(new FormFoodDetails());
         }
 
-        private void btnRestaurant_Click(object sender, EventArgs e)
+        private void btnStaffDetails_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color5);
-            OpenForm(new FormRestaurant());
+            OpenForm(new FormStaffDetails());
+        }
+
+        private void btnPayments_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color7);
+            OpenForm(new FormPayments());
+
+        }
+        private void btnNotifications_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color8);
+            OpenForm(new FormNotifications());
         }
 
         private void panelLogo_Paint(object sender, PaintEventArgs e)
@@ -354,5 +373,7 @@ namespace Hotel_Management_System
         {
             Application.Exit();
         }
+
+        
     }
 }

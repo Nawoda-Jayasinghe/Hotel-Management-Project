@@ -55,8 +55,16 @@
     <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.5.15.3\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
+    <Reference Include="FontAwesome.Sharp.Pro, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.Pro.5.15.3\lib\net472\FontAwesome.Sharp.Pro.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.25.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -68,53 +76,59 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormNewGuest.cs">
+    <Compile Include="DatabaseConnection.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reciptionist\FormNewGuest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormNewGuest.Designer.cs">
+    <Compile Include="Reciptionist\FormNewGuest.Designer.cs">
       <DependentUpon>FormNewGuest.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSalaryDetails.cs">
+    <Compile Include="Reciptionist\FormNotifications.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSalaryDetails.Designer.cs">
-      <DependentUpon>FormSalaryDetails.cs</DependentUpon>
+    <Compile Include="Reciptionist\FormNotifications.Designer.cs">
+      <DependentUpon>FormNotifications.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormRoomDetails.cs">
+    <Compile Include="Reciptionist\FormPayments.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormRoomDetails.Designer.cs">
+    <Compile Include="Reciptionist\FormPayments.Designer.cs">
+      <DependentUpon>FormPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reciptionist\FormStaffDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reciptionist\FormStaffDetails.Designer.cs">
+      <DependentUpon>FormStaffDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reciptionist\FormRoomDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reciptionist\FormRoomDetails.Designer.cs">
       <DependentUpon>FormRoomDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormGuestDetails.cs">
+    <Compile Include="Reciptionist\FormGuestDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormGuestDetails.Designer.cs">
+    <Compile Include="Reciptionist\FormGuestDetails.Designer.cs">
       <DependentUpon>FormGuestDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormRestaurant.cs">
+    <Compile Include="Reciptionist\FormFoodDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormRestaurant.Designer.cs">
-      <DependentUpon>FormRestaurant.cs</DependentUpon>
+    <Compile Include="Reciptionist\FormFoodDetails.Designer.cs">
+      <DependentUpon>FormFoodDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMain.cs">
+    <Compile Include="Reciptionist\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMain.Designer.cs">
+    <Compile Include="Reciptionist\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Reciptionist.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reciptionist.Designer.cs">
-      <DependentUpon>Reciptionist.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Home-Reciptionist.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Home-Reciptionist.Designer.cs">
-      <DependentUpon>Home-Reciptionist.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -124,43 +138,47 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormNewGuest.resx">
+    <None Include="Resources\looog-01.png" />
+    <None Include="Resources\Asset 1-8.jpg" />
+    <None Include="Resources\Asset 1-8.png" />
+    <None Include="Resources\logo-01.png" />
+    <EmbeddedResource Include="Reciptionist\FormNewGuest.resx">
       <DependentUpon>FormNewGuest.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMain.resx">
+    <EmbeddedResource Include="Reciptionist\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSalaryDetails.resx">
-      <DependentUpon>FormSalaryDetails.cs</DependentUpon>
+    <EmbeddedResource Include="Reciptionist\FormNotifications.resx">
+      <DependentUpon>FormNotifications.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormRoomDetails.resx">
+    <EmbeddedResource Include="Reciptionist\FormPayments.resx">
+      <DependentUpon>FormPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reciptionist\FormStaffDetails.resx">
+      <DependentUpon>FormStaffDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reciptionist\FormRoomDetails.resx">
       <DependentUpon>FormRoomDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormGuestDetails.resx">
+    <EmbeddedResource Include="Reciptionist\FormGuestDetails.resx">
       <DependentUpon>FormGuestDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormRestaurant.resx">
-      <DependentUpon>FormRestaurant.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reciptionist.resx">
-      <DependentUpon>Reciptionist.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Home-Reciptionist.resx">
-      <DependentUpon>Home-Reciptionist.cs</DependentUpon>
+    <EmbeddedResource Include="Reciptionist\FormFoodDetails.resx">
+      <DependentUpon>FormFoodDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -207,6 +225,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\61-612472_minimalist-x-mark-clip-art-medium-size-yellow-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admin\" />
+    <Folder Include="Cashier\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
