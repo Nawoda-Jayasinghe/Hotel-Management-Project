@@ -76,6 +76,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cashier\adminTest1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cashier\adminTest1.Designer.cs">
+      <DependentUpon>adminTest1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cashier\Food.cs">
       <SubType>Form</SubType>
     </Compile>
