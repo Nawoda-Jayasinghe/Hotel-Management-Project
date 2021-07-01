@@ -13,7 +13,7 @@ using FontAwesome.Sharp;
 
 namespace Hotel_Management_System
 {
-    public partial class New : Form
+    public partial class New1 : Form
     {
         //fields
         private IconButton currentBtn;
@@ -22,7 +22,7 @@ namespace Hotel_Management_System
 
 
         //constructor
-        public New()
+        public New1()
         {
             InitializeComponent();
             leftBoarderBtn = new Panel();

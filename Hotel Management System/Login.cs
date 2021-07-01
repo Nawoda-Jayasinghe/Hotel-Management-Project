@@ -15,6 +15,11 @@ namespace Hotel_Management_System
         public Login()
         {
             InitializeComponent();
+
+            this.Text = string.Empty;
+            this.ControlBox = false;
+            this.DoubleBuffered = true;
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
 
@@ -25,13 +30,19 @@ namespace Hotel_Management_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Reciptionist objUI = new Reciptionist();
-            objUI.ShowDialog();
-            this.Close();
+            //FormMain mainmenu = new FormMain();
+            // mainmenu.ShowDialog();
+            // this.Close();
+
+          
+        
 
 
-           
+        }
 
+        private void Login_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

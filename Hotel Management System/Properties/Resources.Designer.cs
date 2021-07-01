@@ -73,29 +73,29 @@ namespace Hotel_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Asset_1_8 {
+            get {
+                object obj = ResourceManager.GetObject("Asset 1-8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Asset_1_81 {
+            get {
+                object obj = ResourceManager.GetObject("Asset 1-81", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Asset_2 {
             get {
                 object obj = ResourceManager.GetObject("Asset 2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap blue_hotel_neon_window_wallpaper_preview {
-            get {
-                object obj = ResourceManager.GetObject("blue-hotel-neon-window-wallpaper-preview", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap blue_hotel_neon_window_wallpaper_preview1 {
-            get {
-                object obj = ResourceManager.GetObject("blue-hotel-neon-window-wallpaper-preview1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -117,6 +117,26 @@ namespace Hotel_Management_System.Properties {
         internal static System.Drawing.Bitmap kissclipart_man_icon_person_icon_user_icon_f866665a77bd737a_removebg_preview__1_ {
             get {
                 object obj = ResourceManager.GetObject("kissclipart-man-icon-person-icon-user-icon-f866665a77bd737a-removebg-preview (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_01 {
+            get {
+                object obj = ResourceManager.GetObject("logo-01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap looog_01 {
+            get {
+                object obj = ResourceManager.GetObject("looog-01", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

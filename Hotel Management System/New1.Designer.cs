@@ -1,7 +1,7 @@
 ﻿
 namespace Hotel_Management_System
 {
-    partial class New
+    partial class New1
     {
         /// <summary>
         /// Required designer variable.
@@ -578,8 +578,8 @@ namespace Hotel_Management_System
             this.Controls.Add(this.panelS);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelMenu);
-            this.Name = "New";
-            this.Text = "New";
+            this.Name = "New1";
+            this.Text = "New1";
             this.Load += new System.EventHandler(this.New_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
