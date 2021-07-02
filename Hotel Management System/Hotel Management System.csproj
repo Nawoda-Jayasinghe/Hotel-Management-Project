@@ -94,6 +94,12 @@
     <Compile Include="Cashier\Food.Designer.cs">
       <DependentUpon>Food.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cashier\Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cashier\Inventory.Designer.cs">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatabaseConnection.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -165,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cashier\Food.resx">
       <DependentUpon>Food.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cashier\Inventory.resx">
+      <DependentUpon>Inventory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reciptionist\FormNewGuest.resx">
       <DependentUpon>FormNewGuest.cs</DependentUpon>
